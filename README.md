@@ -28,4 +28,4 @@ To empower users with full ownership and control over their tasks, without relyi
 
 ## 📄 Contract Details
 
-*This section is reserved for manual input (by Judy). Add contract address and ABI link (if deployed on public chain).*
+0x895c9d6903f5e64d7989da227dcc98aaef88cd0e
