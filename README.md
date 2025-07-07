@@ -29,3 +29,4 @@ To empower users with full ownership and control over their tasks, without relyi
 ## 📄 Contract Details
 
 0x895c9d6903f5e64d7989da227dcc98aaef88cd0e
+![Screenshot 2025-06-20 213227](https://github.com/user-attachments/assets/e74a0405-2cb9-4419-b895-16435136233c)
