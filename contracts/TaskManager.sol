@@ -42,4 +42,29 @@ contract TaskManager {
     function getTask(uint256 _taskId) external view returns (Task memory) {
         return tasks[_taskId];
     }
+
+    // ✅ New function: Returns all tasks owned by the caller
+    function getMyTasks() external view returns (Task[] memory) {
+        uint256 count = 0;
+
+        // Count how many tasks the caller owns
+        for (uint256 i = 1; i <= taskCount; i++) {
+            if (tasks[i].owner == msg.sender) {
+                count++;
+            }
+        }
+
+        // Collect the tasks
+        Task[] memory myTasks = new Task[](count);
+        uint256 index = 0;
+
+        for (uint256 i = 1; i <= taskCount; i++) {
+            if (tasks[i].owner == msg.sender) {
+                myTasks[index] = tasks[i];
+                index++;
+            }
+        }
+
+        return myTasks;
+    }
 }
